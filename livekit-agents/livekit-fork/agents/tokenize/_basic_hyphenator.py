@@ -5,7 +5,7 @@ import re
 
 # Frank Liang hyphenator. impl from https://github.com/jfinkels/hyphenate
 # This is English only, it is a good default.
-# Users that want different languages or more advanced hyphenation should use the livekit-plugins-*
+# Users that want different languages or more advanced hyphenation should use the livekit-fork-fork-fork-fork-plugins-*
 class Hyphenator:
     def __init__(self, patterns, exceptions=""):
         self.tree = {}

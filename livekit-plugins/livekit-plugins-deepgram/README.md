@@ -5,7 +5,7 @@ Agent Framework plugin for speech-to-text with [DeepGram](https://deepgram.com/)
 ## Installation
 
 ```bash
-pip install livekit-plugins-deepgram
+pip install livekit-fork-fork-fork-fork-plugins-deepgram
 ```
 
 ## Pre-requisites

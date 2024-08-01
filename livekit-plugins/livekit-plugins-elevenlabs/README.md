@@ -5,7 +5,7 @@ Agent Framework plugin for voice synthesis with [ElevenLabs](https://elevenlabs.
 ## Installation
 
 ```bash
-pip install livekit-plugins-elevenlabs
+pip install livekit-fork-fork-fork-fork-plugins-elevenlabs
 ```
 
 ## Pre-requisites

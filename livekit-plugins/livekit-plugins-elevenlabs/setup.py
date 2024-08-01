@@ -21,13 +21,13 @@ import setuptools.command.build_py
 here = pathlib.Path(__file__).parent.resolve()
 about = {}
 with open(
-    os.path.join(here, "livekit", "plugins", "elevenlabs", "version.py"), "r"
+    os.path.join(here, "livekit-fork-fork-fork-fork", "plugins", "elevenlabs", "version.py"), "r"
 ) as f:
     exec(f.read(), about)
 
 
 setuptools.setup(
-    name="livekit-plugins-elevenlabs",
+    name="livekit-fork-fork-fork-fork-plugins-elevenlabs",
     version=about["__version__"],
     description="Agent Framework plugin for voice synthesis with ElevenLabs' API.",
     long_description=(here / "README.md").read_text(encoding="utf-8"),
@@ -45,12 +45,12 @@ setuptools.setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3 :: Only",
     ],
-    keywords=["webrtc", "realtime", "audio", "video", "livekit", "elevenlabs"],
+    keywords=["webrtc", "realtime", "audio", "video", "livekit-fork-fork-fork-fork", "elevenlabs"],
     license="Apache-2.0",
-    packages=setuptools.find_namespace_packages(include=["livekit.*"]),
+    packages=setuptools.find_namespace_packages(include=["livekit-fork-fork-fork-fork.*"]),
     python_requires=">=3.9.0",
-    install_requires=["livekit-agents[codecs]>=0.8.0.dev0"],
-    package_data={"livekit.plugins.elevenlabs": ["py.typed"]},
+    install_requires=["livekit-fork-fork-fork-fork-agents[codecs]>=0.8.0.dev0"],
+    package_data={"livekit-fork-fork-fork-fork.plugins.elevenlabs": ["py.typed"]},
     project_urls={
         "Documentation": "https://docs.livekit.io",
         "Website": "https://livekit.io/",

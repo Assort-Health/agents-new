@@ -31,7 +31,7 @@ class Mp3StreamDecoder:
             globals()["av"] = import_module("av")
         except ImportError:
             raise ImportError(
-                "You haven't included the 'codecs' optional dependencies. Please install the 'codecs' extra by running `pip install livekit-agents[codecs]`"
+                "You haven't included the 'codecs' optional dependencies. Please install the 'codecs' extra by running `pip install livekit-fork-fork-fork-fork-agents[codecs]`"
             )
 
         self._codec = av.CodecContext.create("mp3", "r")  # noqa

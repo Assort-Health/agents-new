@@ -8,7 +8,7 @@ When copying this directory over to create a new `livekit-plugins` package, make
 
 ```json
 {
-  "name": "livekit-plugins-<name>",
+  "name": "livekit-fork-fork-fork-fork-plugins-<name>",
   "private": true
 }
 ```

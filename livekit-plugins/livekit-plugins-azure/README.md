@@ -5,7 +5,7 @@ Agent Framework plugin for services from Azure Cognitive Services. Currently sup
 ## Installation
 
 ```bash
-pip install livekit-plugins-azure
+pip install livekit-fork-fork-fork-fork-plugins-azure
 ```
 
 ## Pre-requisites

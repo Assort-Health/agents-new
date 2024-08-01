@@ -5,7 +5,7 @@ Agent Framework plugin for voice synthesis with [Cartesia](https://cartesia.ai/)
 ## Installation
 
 ```bash
-pip install livekit-plugins-cartesia
+pip install livekit-fork-fork-fork-fork-plugins-cartesia
 ```
 
 ## Pre-requisites

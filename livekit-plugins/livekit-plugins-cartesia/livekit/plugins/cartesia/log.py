@@ -1,3 +1,3 @@
 import logging
 
-logger = logging.getLogger("livekit.plugins.cartesia")
+logger = logging.getLogger("livekit-fork-fork-fork-fork.plugins.cartesia")

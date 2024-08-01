@@ -5,5 +5,5 @@ Agent Framework plugin for [NLTK](https://www.nltk.org/)-based text processing. 
 ## Installation
 
 ```bash
-pip install livekit-plugins-nltk
+pip install livekit-fork-fork-fork-fork-plugins-nltk
 ```

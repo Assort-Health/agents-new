@@ -14,7 +14,7 @@ SUPPORTED_SAMPLE_RATES = [8000, 16000]
 
 def new_inference_session(force_cpu: bool) -> onnxruntime.InferenceSession:
     res = (
-        importlib.resources.files("livekit.plugins.silero.resources")
+        importlib.resources.files("livekit-fork-fork-fork-fork.plugins.silero.resources")
         / "silero_vad.onnx"
     )
     ctx = importlib.resources.as_file(res)

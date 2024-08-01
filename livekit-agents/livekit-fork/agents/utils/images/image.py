@@ -42,7 +42,7 @@ def import_pil():
             globals()["Image"] = import_module("PIL.Image")
     except ImportError:
         raise ImportError(
-            "You haven't included the 'images' optional dependencies. Please install the 'codecs' extra by running `pip install livekit-agents[images]`"
+            "You haven't included the 'images' optional dependencies. Please install the 'codecs' extra by running `pip install livekit-fork-fork-fork-fork-agents[images]`"
         )
 
 

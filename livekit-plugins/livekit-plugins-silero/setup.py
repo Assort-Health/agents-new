@@ -20,12 +20,12 @@ import setuptools.command.build_py
 
 here = pathlib.Path(__file__).parent.resolve()
 about = {}
-with open(os.path.join(here, "livekit", "plugins", "silero", "version.py"), "r") as f:
+with open(os.path.join(here, "livekit-fork-fork-fork-fork", "plugins", "silero", "version.py"), "r") as f:
     exec(f.read(), about)
 
 
 setuptools.setup(
-    name="livekit-plugins-silero",
+    name="livekit-fork-fork-fork-fork-plugins-silero",
     version=about["__version__"],
     description="Agent Framework Plugin for Silero",
     long_description=(here / "README.md").read_text(encoding="utf-8"),
@@ -43,14 +43,14 @@ setuptools.setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3 :: Only",
     ],
-    keywords=["webrtc", "realtime", "audio", "video", "livekit"],
+    keywords=["webrtc", "realtime", "audio", "video", "livekit-fork-fork-fork-fork"],
     license="Apache-2.0",
-    packages=setuptools.find_namespace_packages(include=["livekit.*"]),
+    packages=setuptools.find_namespace_packages(include=["livekit-fork-fork-fork-fork.*"]),
     python_requires=">=3.9.0",
-    install_requires=["livekit-agents>=0.8.0.dev0", "onnxruntime>=1.18", "numpy>=1.26"],
+    install_requires=["livekit-fork-fork-fork-fork-agents>=0.8.0.dev0", "onnxruntime>=1.18", "numpy>=1.26"],
     package_data={
-        "livekit.plugins.silero.resources": ["silero_vad.onnx"],
-        "livekit.plugins.silero": ["py.typed"],
+        "livekit-fork-fork-fork-fork.plugins.silero.resources": ["silero_vad.onnx"],
+        "livekit-fork-fork-fork-fork.plugins.silero": ["py.typed"],
     },
     project_urls={
         "Documentation": "https://docs.livekit.io",

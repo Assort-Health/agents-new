@@ -5,7 +5,7 @@ Agent Framework plugin for services from Google Cloud. Currently supporting Goog
 ## Installation
 
 ```bash
-pip install livekit-plugins-google
+pip install livekit-fork-fork-fork-fork-plugins-google
 ```
 
 ## Pre-requisites

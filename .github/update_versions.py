@@ -45,14 +45,14 @@ def update_requirements_txt(example_dir: pathlib.Path, last_versions: dict[str, 
 if __name__ == "__main__":
     package_versions = {}
 
-    agents_root = pathlib.Path.cwd() / "livekit-agents"
-    plugins_root = pathlib.Path.cwd() / "livekit-plugins"
+    agents_root = pathlib.Path.cwd() / "livekit-fork-fork-fork-fork-agents"
+    plugins_root = pathlib.Path.cwd() / "livekit-fork-fork-fork-fork-plugins"
     examples_root = pathlib.Path.cwd() / "examples"
 
     agent_version = update_py_version(
-        agents_root, agents_root / "livekit" / "agents" / "version.py"
+        agents_root, agents_root / "livekit-fork-fork-fork-fork" / "agents" / "version.py"
     )
-    package_versions["livekit-agents"] = agent_version
+    package_versions["livekit-fork-fork-fork-fork-agents"] = agent_version
 
     for plugin in plugins_root.iterdir():
         if not plugin.is_dir():
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
         plugin_name = plugin.name.split("-")[-1]
         version = update_py_version(
-            plugin, plugin / "livekit" / "plugins" / plugin_name / "version.py"
+            plugin, plugin / "livekit-fork-fork-fork-fork" / "plugins" / plugin_name / "version.py"
         )
         package_versions[plugin.name] = version
 

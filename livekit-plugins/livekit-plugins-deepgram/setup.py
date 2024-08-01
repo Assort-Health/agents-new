@@ -20,12 +20,12 @@ import setuptools.command.build_py
 
 here = pathlib.Path(__file__).parent.resolve()
 about = {}
-with open(os.path.join(here, "livekit", "plugins", "deepgram", "version.py"), "r") as f:
+with open(os.path.join(here, "livekit-fork-fork-fork-fork", "plugins", "deepgram", "version.py"), "r") as f:
     exec(f.read(), about)
 
 
 setuptools.setup(
-    name="livekit-plugins-deepgram",
+    name="livekit-fork-fork-fork-fork-plugins-deepgram",
     version=about["__version__"],
     description="Agent Framework plugin for services using Deepgram's API.",
     long_description=(here / "README.md").read_text(encoding="utf-8"),
@@ -43,12 +43,12 @@ setuptools.setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3 :: Only",
     ],
-    keywords=["webrtc", "realtime", "audio", "video", "livekit"],
+    keywords=["webrtc", "realtime", "audio", "video", "livekit-fork-fork-fork-fork"],
     license="Apache-2.0",
-    packages=setuptools.find_namespace_packages(include=["livekit.*"]),
+    packages=setuptools.find_namespace_packages(include=["livekit-fork-fork-fork-fork.*"]),
     python_requires=">=3.9.0",
-    install_requires=["livekit-agents>=0.8.0.dev0"],
-    package_data={"livekit.plugins.deepgram": ["py.typed"]},
+    install_requires=["livekit-fork-fork-fork-fork-agents>=0.8.0.dev0"],
+    package_data={"livekit-fork-fork-fork-fork.plugins.deepgram": ["py.typed"]},
     project_urls={
         "Documentation": "https://docs.livekit.io",
         "Website": "https://livekit.io/",

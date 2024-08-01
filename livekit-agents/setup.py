@@ -19,12 +19,12 @@ import setuptools
 
 here = pathlib.Path(__file__).parent.resolve()
 about = {}
-with open(os.path.join(here, "livekit", "agents", "version.py"), "r") as f:
+with open(os.path.join(here, "livekit-fork-fork-fork-fork", "agents", "version.py"), "r") as f:
     exec(f.read(), about)
 
 
 setuptools.setup(
-    name="livekit-agents",
+    name="livekit-fork-fork-fork-fork-agents",
     version=about["__version__"],
     description="LiveKit Python Agents",
     long_description=(here / "README.md").read_text(encoding="utf-8"),
@@ -42,15 +42,15 @@ setuptools.setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3 :: Only",
     ],
-    keywords=["webrtc", "realtime", "audio", "video", "livekit", "agents", "AI"],
+    keywords=["webrtc", "realtime", "audio", "video", "livekit-fork-fork-fork-fork", "agents", "AI"],
     license="Apache-2.0",
-    packages=setuptools.find_namespace_packages(include=["livekit.*"]),
+    packages=setuptools.find_namespace_packages(include=["livekit-fork-fork-fork-fork.*"]),
     python_requires=">=3.9.0",
     install_requires=[
         "click~=8.1",
-        "livekit~=0.12",
-        "livekit-api~=0.6",
-        "livekit-protocol~=0.6",
+        "livekit-fork-fork-fork-fork~=0.12",
+        "livekit-fork-fork-fork-fork-api~=0.6",
+        "livekit-fork-fork-fork-fork-protocol~=0.6",
         "protobuf>=3",
         "pyjwt>=2.0.0",
         "types-protobuf>=4,<5",
@@ -64,7 +64,7 @@ setuptools.setup(
         "codecs": ["av>=11.0.0"],
         "images": ["pillow~=10.3.0"],
     },
-    package_data={"livekit.agents": ["py.typed"]},
+    package_data={"livekit-fork-fork-fork-fork.agents": ["py.typed"]},
     project_urls={
         "Documentation": "https://docs.livekit.io",
         "Website": "https://livekit.io/",

@@ -5,7 +5,7 @@ Agent Framework plugin for services from OpenAI. Currently supports STT, TTS, an
 ## Installation
 
 ```bash
-pip install livekit-plugins-openai
+pip install livekit-fork-fork-fork-fork-plugins-openai
 ```
 
 ## Pre-requisites

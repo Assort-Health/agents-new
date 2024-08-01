@@ -32,8 +32,8 @@ def _find_watchable_paths(main_file: pathlib.Path) -> list[pathlib.Path]:
         except PackageNotFoundError:
             return False
 
-    if not _try_add("livekit.agents"):
-        _try_add("livekit-agents")
+    if not _try_add("livekit-fork-fork-fork-fork.agents"):
+        _try_add("livekit-fork-fork-fork-fork-agents")
 
     for plugin in Plugin.registered_plugins:
         if not _try_add(plugin.package):

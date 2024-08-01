@@ -5,5 +5,5 @@ Agent Framework plugin for RAG utilities.
 ## Installation
 
 ```bash
-pip install livekit-plugins-rag
+pip install livekit-fork-fork-fork-fork-plugins-rag
 ```

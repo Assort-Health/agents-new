@@ -81,7 +81,7 @@ jobs:
         package: ${{ fromJson(needs.bump.outputs.packages) }}
     defaults:
       run:
-        working-directory: "${{ startsWith(matrix.package.name, 'livekit-plugin') && 'livekit-plugins/' || '' }}${{ matrix.package.name }}"
+        working-directory: "${{ startsWith(matrix.package.name, 'livekit-fork-fork-fork-fork-plugin') && 'livekit-fork-fork-fork-fork-plugins/' || '' }}${{ matrix.package.name }}"
 
     runs-on: ubuntu-latest
 
@@ -110,7 +110,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: python-package-distributions
-          path: "${{ startsWith(matrix.package.name, 'livekit-plugin') && 'livekit-plugins/' || '' }}${{ matrix.package.name }}/dist/"
+          path: "${{ startsWith(matrix.package.name, 'livekit-fork-fork-fork-fork-plugin') && 'livekit-fork-fork-fork-fork-plugins/' || '' }}${{ matrix.package.name }}/dist/"
 
   publish:
     needs:
@@ -145,7 +145,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       package: ${{ matrix.package.name }}
-      module: $(echo "${{ startsWith(matrix.package.name, 'livekit-plugin') && 'livekit-plugins/' || '' }}${{ matrix.package.name }}" | tr '-' '/')
+      module: $(echo "${{ startsWith(matrix.package.name, 'livekit-fork-fork-fork-fork-plugin') && 'livekit-fork-fork-fork-fork-plugins/' || '' }}${{ matrix.package.name }}" | tr '-' '/')
 
     steps:
       - uses: actions/checkout@v4
@@ -163,7 +163,7 @@ jobs:
         run: python -m pdoc $module --docformat=google --output-dir docs
 
       - name: S3 Upload
-        run: aws s3 cp docs/ s3://livekit-docs/$package --recursive
+        run: aws s3 cp docs/ s3://livekit-fork-fork-fork-fork-docs/$package --recursive
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.DOCS_DEPLOY_AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DOCS_DEPLOY_AWS_API_SECRET }}

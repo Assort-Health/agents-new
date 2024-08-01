@@ -45,13 +45,13 @@ Agents integrates seamlessly with [LiveKit server](https://github.com/livekit/li
 To install the core Agents library:
 
 ```bash
-pip install livekit-agents
+pip install livekit-fork-fork-fork-fork-agents
 ```
 
 Agents includes a set of prebuilt plugins that make it easier to compose together agents. These plugins cover common tasks like converting speech to text or vice versa and running inference on a generative AI model. You can install a plugin as follows:
 
 ```bash
-pip install livekit-plugins-deepgram
+pip install livekit-fork-fork-fork-fork-plugins-deepgram
 ```
 
 The following plugins are available today:
